@@ -2,7 +2,6 @@
 306 - Write a python program to check if a string is palindrome or not
 """
 
-
 def isPalindrome(string: str) -> bool:
     """
     Returns whether the given string is palindrome or not
