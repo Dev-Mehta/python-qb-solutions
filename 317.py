@@ -3,8 +3,8 @@
 """
 
 def createStr(string: str) -> str:
-    firsthalf = string[:len(string-1)//2]
-    secondhalf = string[len(string-1)//2:]
+    firsthalf = string[:(len(string))//2]
+    secondhalf = string[(len(string))//2:]
     firsthalf = firsthalf.upper()
     secondhalf = secondhalf.lower()
     return firsthalf + secondhalf
