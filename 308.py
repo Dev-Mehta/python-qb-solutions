@@ -1,5 +1,5 @@
 """
-307 - Write a python program to find length of a string in python without using len()
+308 - Write a python program to find length of a string in python without using len()
 """
 
 def findLen(string: str) -> int:

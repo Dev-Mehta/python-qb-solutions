@@ -1,5 +1,5 @@
 """
-307 - Write a python program to find number of uppercase and lowercase letters in string
+309 - Write a python program to find number of uppercase and lowercase letters in string
 """
 
 def findUpperLower(string: str) -> tuple:
