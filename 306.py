@@ -1,5 +1,5 @@
 """
-366 - Write a python program to check if a string is palindrome or not
+306 - Write a python program to check if a string is palindrome or not
 """
 
 
