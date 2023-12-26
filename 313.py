@@ -5,6 +5,7 @@
 def countSubstring(string: str, substring: str, ignoreCase=True) -> int:
     if ignoreCase:
         string = string.lower()
+        substring = substring.lower()
     return string.count(substring)
 
 s = input("Enter a string: ")
