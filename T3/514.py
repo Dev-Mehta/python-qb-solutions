@@ -34,3 +34,20 @@ with open("514_ip.txt") as f:
         if len(word) - afterRemoval == len(search_str):
             output.append(word)
     print(output)
+
+with open("514_ip.txt") as f:
+    words = f.read().split()
+    words = " ".join(words).split(" ")
+    search_str = input("Enter string to search for: ")
+    output = []
+    freq_map = {}
+    for i in search_str:
+        freq_map.update({i:freq_map.get(i,0)+1})
+    for word in words:
+        for i in freq_map.keys():
+            if search_str.count(i) > word.count(i):
+                break
+        else:
+            output.append(word)
+    for i in output:
+        print(i)

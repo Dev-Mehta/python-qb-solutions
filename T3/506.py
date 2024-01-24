@@ -1,12 +1,10 @@
-"""
-Write a Python program to read a text file and do following: 1. Print no. of words 2. Print no. statements
-"""
-from helper import *
-from string import punctuation
+# Write a function display_oddLines() to display odd number lines from the text file.
+def display_oddLines(filename):
+    with open(filename) as f:
+        l = f.readlines()
+        l = [l[i] for i in range(len(l)) if i % 2 == 0]
+        for i in l:
+            i = i.split("\n")[0]
+            print(i)
 
-f = File("505_friends.txt")
-content = f.read()
-trans = str.maketrans('', '', punctuation)
-content = content.translate(trans)
-print("Words: ", len(content.split(" ")))
-print("Lines: ",len(content.split("\n")))
+display_oddLines("505_friends.txt")
